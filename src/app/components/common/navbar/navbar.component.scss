@@ -1,0 +1,40 @@
+.navbar {
+  color: white;
+  font-size: 30px;
+  padding-right: 55px;
+}
+
+.offcanvas {
+  background: transparent;
+}
+
+.dropdown-menu {
+  background: transparent;
+}
+
+.logo {
+  padding-left: 50px;
+  font-family: calluna;
+  font-size: 60px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.offcanvas-body a {
+  text-align: left;
+  font-size: 2vw;
+}
+
+.navbar-nav {
+  padding-left: 55px;
+}
+
+.offcanvas-header .btn-close {
+  margin-top: 1.25rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: calluna;
+}

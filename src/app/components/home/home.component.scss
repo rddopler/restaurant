@@ -1,0 +1,55 @@
+.home {
+  background-image: url('../../../assets/cherry-blossom.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.locations {
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+p {
+  color: white;
+  margin: 0;
+  font-size: 2vw;
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: calluna;
+}
+
+.header {
+  color: white;
+  margin: 0;
+  font-size: 6vw;
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: calluna;
+}
+
+h1 {
+  font-size: 6vw;
+  font-family: calluna;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline;
+  font-size: 2.75vw;
+  margin: 0;
+  font-weight: normal;
+  padding: 30px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

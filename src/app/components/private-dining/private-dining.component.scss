@@ -1,0 +1,47 @@
+.carousel-item button {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.btn {
+  background-color: #1b1b1b;
+  width: 125px;
+}
+
+h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size:5vw;
+  letter-spacing: 2px;
+  font-weight: normal;
+  width: fit-content;
+}
+
+h3 {
+  margin: 0;
+  position: absolute;
+  top: 42.5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 1.75vw;
+  font-weight: normal;
+  letter-spacing: 2px;
+  width: fit-content;
+}
+

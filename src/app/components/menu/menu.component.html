@@ -1,0 +1,48 @@
+<ng-container class="container">
+  <app-header></app-header>
+  <div class="menu-options">
+    <div *ngIf="isChefsTasting || (!isWine && !isDessert && !isDinner)">
+      <video [muted]="true" autoplay loop>
+        <source src="../../../assets/5star.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div *ngIf="isDinner">
+      <video [muted]="true" autoplay loop>
+        <source src="../../../assets/food.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div *ngIf="isDessert">
+      <video [muted]="true" autoplay loop>
+        <source src="../../../assets/chocolate.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div *ngIf="isWine">
+      <video [muted]="true" autoplay loop>
+        <source src="../../../assets/cocktails4.mp4" type="video/mp4">
+      </video>
+    </div>
+    <h1>MENUS</h1>
+    <button type="button" class="btn btn-outline-light" (click)="onChefsTasting()">CHEF'S TASTING</button>
+    <button type="button" class="btn btn-outline-light" (click)="onDinner()">DINNER</button>
+    <button type="button" class="btn btn-outline-light" (click)="onDessert()">DESSERT</button>
+    <button type="button" class="btn btn-outline-light" (click)="onWine()">WINE</button>
+    <hr>
+    <h2>{{menuTitle}}</h2>
+    <img src="../../../assets/trident2.png" alt="Trident" width="40" height="50">
+  </div>
+  <div class="all-menus">
+    <div *ngIf="isChefsTasting || (!isWine && !isDessert && !isDinner)">
+      <app-tasting></app-tasting>
+    </div>
+    <div *ngIf="isDinner">
+      <app-dinner></app-dinner>
+    </div>
+    <div *ngIf="isDessert">
+      <app-desserts></app-desserts>
+    </div>
+    <div *ngIf="isWine">
+      <app-wine></app-wine>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ng-container>
