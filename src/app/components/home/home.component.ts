@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ADDRESSES, NEBULA} from "../../constants/app.constants";
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,24 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent  {
 
-  showBrooklynAddress = false;
-  showManhattanAddress = false;
+  public showBrooklynAddress: boolean | undefined;
+  public showManhattanAddress: boolean | undefined;
+  public manhattanAddress: string | undefined;
+  public brooklynAddress: string | undefined;
+  public restaurantName: string | undefined;
+
 
   constructor() { }
 
+  ngOnInit(): void {
+  this.loadContent();
+  }
 
+  loadContent() {
+    this.manhattanAddress = ADDRESSES.manhattanAddress;
+    this.brooklynAddress = ADDRESSES.brooklynAddress;
+    this.restaurantName = NEBULA;
+  }
 
   changeToBrooklynAddress() {
     this.showBrooklynAddress = true;

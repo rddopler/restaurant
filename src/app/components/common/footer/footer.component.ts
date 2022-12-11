@@ -7,9 +7,7 @@ import {SEPARATOR} from "../../../constants/app.constants";
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  public linkSeparator: any;
-
-  constructor() { }
+  public linkSeparator: string | undefined;
 
   ngOnInit(): void {
     this.loadContent();

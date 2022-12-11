@@ -2,17 +2,17 @@
   <div class="home">
     <app-header></app-header>
     <div class="locations">
-      <div class="header">
-        <h1>NEBULA</h1>
+      <div class="restaurant-name">
+        <h1>{{restaurantName}}</h1>
       </div>
       <div *ngIf="!showBrooklynAddress && !showManhattanAddress">
-        <p>4698 5th Ave - New York, NY </p>
+        <p>{{manhattanAddress}}</p>
       </div>
       <div *ngIf="showBrooklynAddress">
-        <p>4698 5th Ave - New York, NY </p>
+        <p>{{brooklynAddress}}</p>
       </div>
       <div *ngIf="showManhattanAddress">
-        <p>215 4th St - Brooklyn, NY </p>
+        <p>{{manhattanAddress}}</p>
       </div>
       <a routerLink="/manhattan" routerLinkActive="active" (mouseover)="changeToBrooklynAddress()" (mouseleave)="showBrooklynAddress = false">MANHATTAN</a>
       <a routerLink="/brooklyn" routerLinkActive="active" (mouseover)="changeToManhattanAddress()" (mouseleave)="showManhattanAddress = false">BROOKLYN</a>
