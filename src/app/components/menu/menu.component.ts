@@ -11,8 +11,7 @@ export class MenuComponent implements OnInit {
   isDessert = false;
   isWine = false;
 
-  public menuTitle: any;
-  constructor() { }
+  public menuTitle: string | undefined;
 
   ngOnInit(): void {
     this.loadContent();
