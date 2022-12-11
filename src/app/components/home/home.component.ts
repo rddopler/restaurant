@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ADDRESSES, NEBULA} from "../../constants/app.constants";
 
 @Component({
@@ -6,16 +6,13 @@ import {ADDRESSES, NEBULA} from "../../constants/app.constants";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent  {
+export class HomeComponent implements OnInit {
 
   public showBrooklynAddress: boolean | undefined;
   public showManhattanAddress: boolean | undefined;
   public manhattanAddress: string | undefined;
   public brooklynAddress: string | undefined;
   public restaurantName: string | undefined;
-
-
-  constructor() { }
 
   ngOnInit(): void {
   this.loadContent();
