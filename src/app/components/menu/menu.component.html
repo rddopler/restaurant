@@ -1,5 +1,4 @@
 <ng-container class="container">
-  <app-header></app-header>
   <div class="menu-options">
     <div *ngIf="isChefsTasting || (!isWine && !isDessert && !isDinner)">
       <video [muted]="true" autoplay loop>
@@ -44,5 +43,4 @@
       <app-wine></app-wine>
     </div>
   </div>
-  <app-footer></app-footer>
 </ng-container>

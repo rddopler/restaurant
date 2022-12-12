@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { HeaderComponent } from './components/common/header/header.component';
-import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/common/page-not-found/page-not-found.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
@@ -18,6 +17,7 @@ import { DessertsComponent } from './components/menu/desserts/desserts.component
 import { DinnerComponent } from './components/menu/dinner/dinner.component';
 import { TastingComponent } from './components/menu/tasting/tasting.component';
 import { WineComponent } from './components/menu/wine/wine.component';
+import { NavbarComponent } from './components/common/navbar/navbar.component';
 
 @NgModule({
   declarations: [
