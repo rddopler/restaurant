@@ -12,7 +12,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent, HeaderComponent, FooterComponent, NavbarComponent
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        NavbarComponent
       ],
     }).compileComponents();
   });
