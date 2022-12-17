@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { HeaderComponent } from './components/common/header/header.component';
 import { PageNotFoundComponent } from './components/common/page-not-found/page-not-found.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PrivateDiningComponent } from './components/private-dining/private-dining.component';
@@ -18,6 +17,7 @@ import { DinnerComponent } from './components/menu/dinner/dinner.component';
 import { TastingComponent } from './components/menu/tasting/tasting.component';
 import { WineComponent } from './components/menu/wine/wine.component';
 import { NavbarComponent } from './components/common/navbar/navbar.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,6 @@ import { NavbarComponent } from './components/common/navbar/navbar.component';
     HeaderComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    ContactComponent,
     HomeComponent,
     MenuComponent,
     PrivateDiningComponent,
@@ -36,7 +35,8 @@ import { NavbarComponent } from './components/common/navbar/navbar.component';
     DessertsComponent,
     DinnerComponent,
     TastingComponent,
-    WineComponent
+    WineComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

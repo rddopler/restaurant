@@ -6,8 +6,8 @@ import {BrooklynComponent} from "./components/home/location/brooklyn/brooklyn.co
 import {MenuComponent} from "./components/menu/menu.component";
 import {ReservationComponent} from "./components/reservation/reservation.component";
 import {PrivateDiningComponent} from "./components/private-dining/private-dining.component";
-import {ContactComponent} from "./components/contact/contact.component";
 import {PageNotFoundComponent} from "./components/common/page-not-found/page-not-found.component";
+import {AboutComponent} from "./components/about/about.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'menus', component: MenuComponent },
   { path: 'reservation', component: ReservationComponent },
   { path: 'private-dining', component: PrivateDiningComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
