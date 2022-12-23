@@ -9,7 +9,6 @@ import { PageNotFoundComponent } from './components/common/page-not-found/page-n
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PrivateDiningComponent } from './components/private-dining/private-dining.component';
-import { ReservationComponent } from './components/reservation/reservation.component';
 import { ManhattanComponent } from './components/home/location/manhattan/manhattan.component';
 import { BrooklynComponent } from './components/home/location/brooklyn/brooklyn.component';
 import { DessertsComponent } from './components/menu/desserts/desserts.component';
@@ -29,7 +28,6 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     MenuComponent,
     PrivateDiningComponent,
-    ReservationComponent,
     ManhattanComponent,
     BrooklynComponent,
     DessertsComponent,
