@@ -2,4 +2,14 @@
   display: flex;
   color: #FFFFFF;
   justify-content: space-evenly;
+  text-align: center;
+  padding-top: 4rem;
+  font-family: calluna, serif;
+  font-size: 1rem;
+
+  h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+  }
 }
