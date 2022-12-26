@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ADDRESSES, CONTACT, LABELS} from "../../../../constants/app.constants";
+import {ADDRESSES, CONTACT, KEYS, LABELS} from "../../../../constants/app.constants";
+import {Loader} from "@googlemaps/js-api-loader";
 
 @Component({
   selector: 'app-manhattan',
@@ -15,6 +16,7 @@ export class ManhattanComponent implements OnInit{
 
   ngOnInit(): void {
     this.loadContent();
+    this.loadManhattanMap();
   }
 
   loadContent() {
@@ -24,4 +26,23 @@ export class ManhattanComponent implements OnInit{
     this.locationHeader = LABELS.locationLabel;
   }
 
+  loadManhattanMap() {
+    const manhattan = { lat: 40.75875338574843, lng: -73.97699630117748 };
+    const loader = new Loader({
+      apiKey: KEYS.googleMapsApiKey
+    })
+
+    loader.load().then(() => {
+      const map = new google.maps.Map(document.getElementById('map') as HTMLElement,
+        {
+          center: manhattan,
+          zoom: 11
+        })
+
+      const marker = new google.maps.Marker({
+        position: manhattan,
+        map: map,
+      });
+    });
+  }
 }
