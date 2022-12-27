@@ -6,14 +6,18 @@ export const LABELS = {
   locationLabel: 'LOCATION'
 }
 
+export const KEYS = {
+  googleMapsApiKey: '******************'
+}
+
  export const ADDRESSES = {
-   brooklynAddress: '215 4th St - Brooklyn, NY',
+   brooklynAddress: '215 44th St - Brooklyn, NY',
    manhattanAddress: '4698 5th Ave - New York, NY',
    brooklynZipCode: ' 14711',
    manhattanZipCode: ' 13027',
    brooklynBorough: 'Brooklyn, NY',
    manhattanBorough: 'Manhattan, NY',
-   brooklynStreet: '215 4th St',
+   brooklynStreet: '215 44th St',
    manhattanStreet: '4698 5th Ave',
 }
 
